@@ -93,7 +93,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="受信" image="recieve.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="受信" image="recieve" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="AccuracyTextField" destination="wYW-dF-9CA" id="73E-BK-MPw"/>
                         <outlet property="DistanceTextField" destination="qNc-Dz-DMW" id="feP-fF-ky0"/>
@@ -180,7 +180,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="送信" image="transmit.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="送信" image="transmit" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="IdTextField" destination="m8a-bV-vUA" id="756-Pz-LM2"/>
                         <outlet property="MajorTextField" destination="d1B-Im-ML9" id="WJo-T6-GKH"/>
@@ -215,7 +215,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="recieve.png" width="48" height="48"/>
-        <image name="transmit.png" width="48" height="48"/>
+        <image name="recieve" width="48" height="48"/>
+        <image name="transmit" width="48" height="48"/>
     </resources>
 </document>

@@ -34,7 +34,7 @@
 		CCF965CE1FA775CA00685247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965CD1FA775CA00685247 /* AppDelegate.swift */; };
 		CCF965D21FA7761400685247 /* img in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D11FA7761400685247 /* img */; };
 		CCF965D41FA7762A00685247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D31FA7762A00685247 /* Main.storyboard */; };
-		CCF965D71FA777D000685247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D61FA777D000685247 /* Assets.xcassets */; };
+		CCF965D91FA77C2300685247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D81FA77C2300685247 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		CCF965D11FA7761400685247 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		CCF965D31FA7762A00685247 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CCF965D51FA776A500685247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCF965D61FA777D000685247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF965D81FA77C2300685247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +139,7 @@
 		CCF965761FA774AA00685247 /* BeaTester */ = {
 			isa = PBXGroup;
 			children = (
+				CCF965D81FA77C2300685247 /* Assets.xcassets */,
 				CCF965CD1FA775CA00685247 /* AppDelegate.swift */,
 				CCF965791FA774AA00685247 /* ViewController.swift */,
 				CCF965A51FA7757B00685247 /* CBeaconReceiver.swift */,
@@ -161,7 +162,6 @@
 				CCF965C31FA7759F00685247 /* TestViewController.swift */,
 				CCF965C51FA7759F00685247 /* UIDoneTextField.swift */,
 				CCF965C41FA7759F00685247 /* UserDefaultsUtil.swift */,
-				CCF965D61FA777D000685247 /* Assets.xcassets */,
 				CCF965D31FA7762A00685247 /* Main.storyboard */,
 				CCF965801FA774AA00685247 /* LaunchScreen.storyboard */,
 				CCF965D51FA776A500685247 /* Info.plist */,
@@ -299,7 +299,7 @@
 				CCF965821FA774AA00685247 /* LaunchScreen.storyboard in Resources */,
 				CCF965D41FA7762A00685247 /* Main.storyboard in Resources */,
 				CCF965C81FA775A000685247 /* QRTakeViewController.xib in Resources */,
-				CCF965D71FA777D000685247 /* Assets.xcassets in Resources */,
+				CCF965D91FA77C2300685247 /* Assets.xcassets in Resources */,
 				CCF965C71FA775A000685247 /* QRViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,10 +507,10 @@
 				INFOPLIST_FILE = BeaTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.BeaTester;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.iBeaconTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -523,10 +523,10 @@
 				INFOPLIST_FILE = BeaTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.BeaTester;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.iBeaconTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
