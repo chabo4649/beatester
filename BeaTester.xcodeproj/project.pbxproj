@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCF965781FA774AA00685247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965771FA774AA00685247 /* AppDelegate.swift */; };
 		CCF9657A1FA774AA00685247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965791FA774AA00685247 /* ViewController.swift */; };
-		CCF9657D1FA774AA00685247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF9657B1FA774AA00685247 /* Main.storyboard */; };
-		CCF9657F1FA774AA00685247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF9657E1FA774AA00685247 /* Assets.xcassets */; };
 		CCF965821FA774AA00685247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF965801FA774AA00685247 /* LaunchScreen.storyboard */; };
 		CCF9658D1FA774AA00685247 /* BeaTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF9658C1FA774AA00685247 /* BeaTesterTests.swift */; };
 		CCF965981FA774AA00685247 /* BeaTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965971FA774AA00685247 /* BeaTesterUITests.swift */; };
+		CCF965AB1FA7757D00685247 /* CBeaconReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965A51FA7757B00685247 /* CBeaconReceiver.swift */; };
+		CCF965AC1FA7757D00685247 /* COMMON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965A61FA7757B00685247 /* COMMON.swift */; };
+		CCF965AD1FA7757D00685247 /* iBeaconNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965A71FA7757B00685247 /* iBeaconNotificationUtil.swift */; };
+		CCF965AE1FA7757D00685247 /* CUuidGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965A81FA7757C00685247 /* CUuidGenerator.swift */; };
+		CCF965AF1FA7757D00685247 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965A91FA7757C00685247 /* CentralViewController.swift */; };
+		CCF965B01FA7757D00685247 /* CBeaconTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965AA1FA7757C00685247 /* CBeaconTransfer.swift */; };
+		CCF965B81FA7758F00685247 /* QRTakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B11FA7758D00685247 /* QRTakeViewController.swift */; };
+		CCF965B91FA7758F00685247 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B21FA7758D00685247 /* QRGenerator.swift */; };
+		CCF965BA1FA7758F00685247 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B31FA7758D00685247 /* LocationManager.swift */; };
+		CCF965BB1FA7758F00685247 /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B41FA7758E00685247 /* NotificationUtil.swift */; };
+		CCF965BC1FA7758F00685247 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B51FA7758E00685247 /* PeripheralViewController.swift */; };
+		CCF965BD1FA7758F00685247 /* QRReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B61FA7758E00685247 /* QRReader.swift */; };
+		CCF965BE1FA7758F00685247 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965B71FA7758E00685247 /* NotificationController.swift */; };
+		CCF965C61FA775A000685247 /* SosialUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965BF1FA7759E00685247 /* SosialUtility.swift */; };
+		CCF965C71FA775A000685247 /* QRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF965C01FA7759E00685247 /* QRViewController.xib */; };
+		CCF965C81FA775A000685247 /* QRTakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF965C11FA7759E00685247 /* QRTakeViewController.xib */; };
+		CCF965C91FA775A000685247 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965C21FA7759E00685247 /* QRViewController.swift */; };
+		CCF965CA1FA775A000685247 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965C31FA7759F00685247 /* TestViewController.swift */; };
+		CCF965CB1FA775A000685247 /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965C41FA7759F00685247 /* UserDefaultsUtil.swift */; };
+		CCF965CC1FA775A000685247 /* UIDoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965C51FA7759F00685247 /* UIDoneTextField.swift */; };
+		CCF965CE1FA775CA00685247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF965CD1FA775CA00685247 /* AppDelegate.swift */; };
+		CCF965D21FA7761400685247 /* img in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D11FA7761400685247 /* img */; };
+		CCF965D41FA7762A00685247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D31FA7762A00685247 /* Main.storyboard */; };
+		CCF965D71FA777D000685247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF965D61FA777D000685247 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +56,39 @@
 
 /* Begin PBXFileReference section */
 		CCF965741FA774AA00685247 /* BeaTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCF965771FA774AA00685247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCF965791FA774AA00685247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCF9657C1FA774AA00685247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CCF9657E1FA774AA00685247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCF965811FA774AA00685247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CCF965831FA774AA00685247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF965881FA774AA00685247 /* BeaTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF9658C1FA774AA00685247 /* BeaTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaTesterTests.swift; sourceTree = "<group>"; };
 		CCF9658E1FA774AA00685247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF965931FA774AA00685247 /* BeaTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF965971FA774AA00685247 /* BeaTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaTesterUITests.swift; sourceTree = "<group>"; };
 		CCF965991FA774AA00685247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF965A51FA7757B00685247 /* CBeaconReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBeaconReceiver.swift; sourceTree = "<group>"; };
+		CCF965A61FA7757B00685247 /* COMMON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COMMON.swift; sourceTree = "<group>"; };
+		CCF965A71FA7757B00685247 /* iBeaconNotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconNotificationUtil.swift; sourceTree = "<group>"; };
+		CCF965A81FA7757C00685247 /* CUuidGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUuidGenerator.swift; sourceTree = "<group>"; };
+		CCF965A91FA7757C00685247 /* CentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
+		CCF965AA1FA7757C00685247 /* CBeaconTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBeaconTransfer.swift; sourceTree = "<group>"; };
+		CCF965B11FA7758D00685247 /* QRTakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRTakeViewController.swift; sourceTree = "<group>"; };
+		CCF965B21FA7758D00685247 /* QRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		CCF965B31FA7758D00685247 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CCF965B41FA7758E00685247 /* NotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationUtil.swift; sourceTree = "<group>"; };
+		CCF965B51FA7758E00685247 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		CCF965B61FA7758E00685247 /* QRReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReader.swift; sourceTree = "<group>"; };
+		CCF965B71FA7758E00685247 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CCF965BF1FA7759E00685247 /* SosialUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SosialUtility.swift; sourceTree = "<group>"; };
+		CCF965C01FA7759E00685247 /* QRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRViewController.xib; sourceTree = "<group>"; };
+		CCF965C11FA7759E00685247 /* QRTakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRTakeViewController.xib; sourceTree = "<group>"; };
+		CCF965C21FA7759E00685247 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		CCF965C31FA7759F00685247 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CCF965C41FA7759F00685247 /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
+		CCF965C51FA7759F00685247 /* UIDoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDoneTextField.swift; sourceTree = "<group>"; };
+		CCF965CD1FA775CA00685247 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCF965D11FA7761400685247 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		CCF965D31FA7762A00685247 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CCF965D51FA776A500685247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF965D61FA777D000685247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +139,33 @@
 		CCF965761FA774AA00685247 /* BeaTester */ = {
 			isa = PBXGroup;
 			children = (
-				CCF965771FA774AA00685247 /* AppDelegate.swift */,
+				CCF965CD1FA775CA00685247 /* AppDelegate.swift */,
 				CCF965791FA774AA00685247 /* ViewController.swift */,
-				CCF9657B1FA774AA00685247 /* Main.storyboard */,
-				CCF9657E1FA774AA00685247 /* Assets.xcassets */,
+				CCF965A51FA7757B00685247 /* CBeaconReceiver.swift */,
+				CCF965AA1FA7757C00685247 /* CBeaconTransfer.swift */,
+				CCF965A91FA7757C00685247 /* CentralViewController.swift */,
+				CCF965A61FA7757B00685247 /* COMMON.swift */,
+				CCF965A81FA7757C00685247 /* CUuidGenerator.swift */,
+				CCF965A71FA7757B00685247 /* iBeaconNotificationUtil.swift */,
+				CCF965B31FA7758D00685247 /* LocationManager.swift */,
+				CCF965B71FA7758E00685247 /* NotificationController.swift */,
+				CCF965B41FA7758E00685247 /* NotificationUtil.swift */,
+				CCF965B51FA7758E00685247 /* PeripheralViewController.swift */,
+				CCF965B21FA7758D00685247 /* QRGenerator.swift */,
+				CCF965B61FA7758E00685247 /* QRReader.swift */,
+				CCF965B11FA7758D00685247 /* QRTakeViewController.swift */,
+				CCF965C11FA7759E00685247 /* QRTakeViewController.xib */,
+				CCF965C21FA7759E00685247 /* QRViewController.swift */,
+				CCF965C01FA7759E00685247 /* QRViewController.xib */,
+				CCF965BF1FA7759E00685247 /* SosialUtility.swift */,
+				CCF965C31FA7759F00685247 /* TestViewController.swift */,
+				CCF965C51FA7759F00685247 /* UIDoneTextField.swift */,
+				CCF965C41FA7759F00685247 /* UserDefaultsUtil.swift */,
+				CCF965D61FA777D000685247 /* Assets.xcassets */,
+				CCF965D31FA7762A00685247 /* Main.storyboard */,
 				CCF965801FA774AA00685247 /* LaunchScreen.storyboard */,
-				CCF965831FA774AA00685247 /* Info.plist */,
+				CCF965D51FA776A500685247 /* Info.plist */,
+				CCF965D11FA7761400685247 /* img */,
 			);
 			path = BeaTester;
 			sourceTree = "<group>";
@@ -232,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF965D21FA7761400685247 /* img in Resources */,
 				CCF965821FA774AA00685247 /* LaunchScreen.storyboard in Resources */,
-				CCF9657F1FA774AA00685247 /* Assets.xcassets in Resources */,
-				CCF9657D1FA774AA00685247 /* Main.storyboard in Resources */,
+				CCF965D41FA7762A00685247 /* Main.storyboard in Resources */,
+				CCF965C81FA775A000685247 /* QRTakeViewController.xib in Resources */,
+				CCF965D71FA777D000685247 /* Assets.xcassets in Resources */,
+				CCF965C71FA775A000685247 /* QRViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +325,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF965BE1FA7758F00685247 /* NotificationController.swift in Sources */,
+				CCF965B01FA7757D00685247 /* CBeaconTransfer.swift in Sources */,
+				CCF965C91FA775A000685247 /* QRViewController.swift in Sources */,
+				CCF965BD1FA7758F00685247 /* QRReader.swift in Sources */,
+				CCF965AE1FA7757D00685247 /* CUuidGenerator.swift in Sources */,
+				CCF965BB1FA7758F00685247 /* NotificationUtil.swift in Sources */,
+				CCF965BC1FA7758F00685247 /* PeripheralViewController.swift in Sources */,
+				CCF965B91FA7758F00685247 /* QRGenerator.swift in Sources */,
+				CCF965CE1FA775CA00685247 /* AppDelegate.swift in Sources */,
+				CCF965BA1FA7758F00685247 /* LocationManager.swift in Sources */,
+				CCF965CC1FA775A000685247 /* UIDoneTextField.swift in Sources */,
+				CCF965AC1FA7757D00685247 /* COMMON.swift in Sources */,
+				CCF965B81FA7758F00685247 /* QRTakeViewController.swift in Sources */,
+				CCF965CB1FA775A000685247 /* UserDefaultsUtil.swift in Sources */,
+				CCF965AD1FA7757D00685247 /* iBeaconNotificationUtil.swift in Sources */,
+				CCF965AF1FA7757D00685247 /* CentralViewController.swift in Sources */,
 				CCF9657A1FA774AA00685247 /* ViewController.swift in Sources */,
-				CCF965781FA774AA00685247 /* AppDelegate.swift in Sources */,
+				CCF965C61FA775A000685247 /* SosialUtility.swift in Sources */,
+				CCF965AB1FA7757D00685247 /* CBeaconReceiver.swift in Sources */,
+				CCF965CA1FA775A000685247 /* TestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CCF9657B1FA774AA00685247 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCF9657C1FA774AA00685247 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCF965801FA774AA00685247 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +503,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S42QQG2S96;
 				INFOPLIST_FILE = BeaTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.BeaTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +519,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S42QQG2S96;
 				INFOPLIST_FILE = BeaTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.BeaTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
