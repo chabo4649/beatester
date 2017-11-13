@@ -21,9 +21,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.00.99</string>
+	<string>1.00.32</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Beacon発信の為に使います</string>
 	<key>NSCameraUsageDescription</key>
 	<string>QRコード読み取りで使います</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
