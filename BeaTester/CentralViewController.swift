@@ -75,8 +75,8 @@ class CentralViewController: UIViewController, UITextFieldDelegate, CLLocationMa
         let status = CLLocationManager.authorizationStatus()
         
         // まだ認証が得られていない場合は、認証ダイアログを表示
-        if(status != CLAuthorizationStatus.authorizedAlways) {
-            self.trackLocationManager.requestAlwaysAuthorization();
+        if(status != CLAuthorizationStatus.authorizedWhenInUse) {
+            self.trackLocationManager.requestWhenInUseAuthorization()
         }
         // BeaconのUUIDを設定
         print(UUIDTextField!.text!)
