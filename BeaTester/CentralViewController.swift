@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import AudioToolbox
 
 class CentralViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate, QRTakeViewControllerDelegate{
     
@@ -76,7 +77,14 @@ class CentralViewController: UIViewController, UITextFieldDelegate, CLLocationMa
         
         // まだ認証が得られていない場合は、認証ダイアログを表示
         if(status != CLAuthorizationStatus.authorizedWhenInUse) {
-            self.trackLocationManager.requestWhenInUseAuthorization()
+            if #available(iOS 10.0, *) {
+                //sharedInstance.allowsBackgroundLocationUpdates = true
+                self.trackLocationManager.requestAlwaysAuthorization()
+            } else {
+                // Fallback on earlier versions
+                self.trackLocationManager.requestWhenInUseAuthorization()
+            }
+            
         }
         // BeaconのUUIDを設定
         print(UUIDTextField!.text!)
@@ -245,6 +253,14 @@ class CentralViewController: UIViewController, UITextFieldDelegate, CLLocationMa
         
         sendLocalNotificationWithMessage("検知中\(dateFormatter.string(from: Date()))", pUUID: UUIDTextField!.text!)
         //iBeaconNotificationUtil.postLocalNotificationIfNeeded(message: "検知中\(dateFormatter.string(from: Date()))")
+        var soundId:SystemSoundID = 0
+        let soundUrl:NSURL? = NSURL(fileURLWithPath: "/System/Library/Audio/UISounds/alarm.caf")
+        // システムサウンドへのパスを指定
+        if soundUrl != nil {
+            // SystemsoundIDを作成して再生実行
+            AudioServicesCreateSystemSoundID(soundUrl!, &soundId)
+            AudioServicesPlaySystemSound(soundId)
+        }
         
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import AudioToolbox
 
 class CBeaconReceiver: NSObject, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
@@ -33,6 +34,8 @@ class CBeaconReceiver: NSObject, CLLocationManagerDelegate {
             UIApplication.shared.scheduleLocalNotification(notification)
         }
         
+
+        
 //        switch status {
 //        case .NotDetermined:
 //            if locationManager.respondsToSelector("requestWhenInUseAuthorization") { locationManager.requestWhenInUseAuthorization() }
@@ -49,6 +52,20 @@ class CBeaconReceiver: NSObject, CLLocationManagerDelegate {
 //        default:
 //            break
 //        }
+    }
+    
+    /*
+     (Delegate) リージョン内に入ったというイベントを受け取る.
+     */
+    func locationManager(_ manager: CLLocationManager, didEnterRegion: CLRegion) {
+        
+    }
+    
+    /*
+     (Delegate) リージョンから出たというイベントを受け取る.
+     */
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        
     }
     
     fileprivate func createRegionNotification(_ uuid: UUID, message: String) -> UILocalNotification {
@@ -75,6 +92,8 @@ class CBeaconReceiver: NSObject, CLLocationManagerDelegate {
         
         return notification
     }
+    
+
     
     init(pUUID:String) {
         myProximityUUID = UUID(uuidString: pUUID)!
