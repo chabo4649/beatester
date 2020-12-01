@@ -20,9 +20,9 @@ class SosialUtility: NSObject{
         
         // 使用しないアクティビティタイプ
         let excludedActivityTypes = [
-            UIActivityType.postToWeibo,
-            UIActivityType.saveToCameraRoll,
-            UIActivityType.print
+            UIActivity.ActivityType.postToWeibo,
+            UIActivity.ActivityType.saveToCameraRoll,
+            UIActivity.ActivityType.print
         ]
         
         activityVC.excludedActivityTypes = excludedActivityTypes

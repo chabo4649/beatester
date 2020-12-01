@@ -17,9 +17,9 @@ class UIDoneTextField: UITextField{
     override func draw(_ rect: CGRect) {
         // Drawing code
         print("hoge")
-        let doneBtn: UIBarButtonItem = UIBarButtonItem( title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(UIDoneTextField.pushBarButtonDone) )
-        let cancelBtn: UIBarButtonItem = UIBarButtonItem( title: "Cancel", style: UIBarButtonItemStyle.done, target: self, action: #selector(UIDoneTextField.pushBarButtonCancel) )
-        let spacer: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
+        let doneBtn: UIBarButtonItem = UIBarButtonItem( title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(UIDoneTextField.pushBarButtonDone) )
+        let cancelBtn: UIBarButtonItem = UIBarButtonItem( title: "Cancel", style: UIBarButtonItem.Style.done, target: self, action: #selector(UIDoneTextField.pushBarButtonCancel) )
+        let spacer: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         let arr_item:[UIBarButtonItem] = [cancelBtn, spacer, doneBtn]
         
         //var toolBar: UIToolbar = UIToolbar().setItems(doneBtn, animated: true)

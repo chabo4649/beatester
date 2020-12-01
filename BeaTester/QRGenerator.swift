@@ -19,7 +19,7 @@ class QRGenerator: NSObject {
         // QRコード生成のフィルター
         // NSData型でデーターを用意
         // inputCorrectionLevelは、誤り訂正レベル
-        let qr = CIFilter(name: "CIQRCodeGenerator", withInputParameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
+        let qr = CIFilter(name: "CIQRCodeGenerator", parameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
         
         
         let sizeTransform = CGAffineTransform(scaleX: 10, y: 10)

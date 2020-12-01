@@ -105,7 +105,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
                     Beacon = CBeaconTransfer(pUUID: UUIDTextField.text!, pMajor: MajorTextField.text!, pMinor: MinorTextField.text!, pIdentify: IdTextField.text!)
                     Beacon!.startToTransferSignal()
                     // 音楽の一時停止処理など
-                    toggleButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.pause, target: self, action: #selector(self.playPauseAction(_:)))
+                    toggleButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.pause, target: self, action: #selector(self.playPauseAction(_:)))
                     self.Status = true
                     self.makeAlert("Signal Start")
                     self.Status = true
@@ -125,7 +125,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
             _ = Beacon!.stopToTransferSignal()
             self.makeAlert("Signal Stoped")
             self.Status = false
-            toggleButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.play, target: self, action: #selector(self.playPauseAction(_:)))
+            toggleButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(self.playPauseAction(_:)))
             items[5] = toggleButton
             self.ToolBar.setItems(items, animated: false)
         }
@@ -173,9 +173,9 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
         UUIDTextField.text = UUID().uuidString
         let generalPasteboard: UIPasteboard = UIPasteboard.general
         generalPasteboard.string = UUIDTextField.text
-        let alert: UIAlertController = UIAlertController(title: "UUID", message: "コピーしました", preferredStyle:UIAlertControllerStyle.alert )
+        let alert: UIAlertController = UIAlertController(title: "UUID", message: "コピーしました", preferredStyle:UIAlertController.Style.alert )
         let defaultAction:UIAlertAction = UIAlertAction(title: "OK",
-            style: UIAlertActionStyle.default,
+            style: UIAlertAction.Style.default,
             handler:{
                 (action:UIAlertAction) -> Void in
                 print("Default")
