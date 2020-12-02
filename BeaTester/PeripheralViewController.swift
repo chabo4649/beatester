@@ -239,6 +239,11 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate,QRTakeView
         UUIDTextField.text = qrinfo[0]
         MajorTextField.text = qrinfo[1]
         MinorTextField.text = qrinfo[2]
+        //UserDefault登録
+        UserDefaultsUtil.setStringValue(COMMON.TRANSMIT_UUID, pItem: qrinfo[0])
+        UserDefaultsUtil.setStringValue(COMMON.TRANSMIT_MAJOR, pItem: qrinfo[1])
+        UserDefaultsUtil.setStringValue(COMMON.TRANSMIT_MINOR, pItem: qrinfo[2])
+        //UserDefaultsUtil.setStringValue(COMMON.TRANSMIT_ID, pItem: qrinfo[1])
         //tmpName = qrinfo[3]
         //tmpGroupName = qrinfo[4]
         

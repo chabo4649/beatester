@@ -125,6 +125,9 @@ class CentralViewController: UIViewController, UITextFieldDelegate, CLLocationMa
         case .authorizedAlways, .authorizedWhenInUse:
             statusStr = "Authorized"
             self.StatusTextField.text   = statusStr
+        @unknown default:
+            statusStr = "unknown"
+            self.StatusTextField.text   = statusStr
         }
         
         print(" CLAuthorizationStatus: \(statusStr)")
