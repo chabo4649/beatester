@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -150,7 +148,13 @@
                                             <action selector="pushGenerateButton:" destination="8rJ-Kc-sve" id="yma-pt-UCx"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DX2-ox-JaA"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="VSw-1n-Lzu"/>
+                                    <barButtonItem systemItem="camera" id="qcm-aw-eRM">
+                                        <connections>
+                                            <action selector="pushQrTakeButton:" destination="8rJ-Kc-sve" id="Erj-7y-znX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HfT-b2-mJq"/>
                                     <barButtonItem systemItem="action" id="cBf-hX-IWr">
                                         <connections>
                                             <action selector="pushActionButton:" destination="8rJ-Kc-sve" id="heC-Ru-Y61"/>

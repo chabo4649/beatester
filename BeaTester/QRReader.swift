@@ -72,8 +72,10 @@ class QRReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     }
     
     //AVCaptureMetadataOutputObjectsDelegateを実装します
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
-        
+    //func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+    func metadataOutput(_ output: AVCaptureMetadataOutput,
+                        didOutput metadataObjects: [AVMetadataObject],
+                        from connection: AVCaptureConnection){
 
         if metadataObjects.count == 0 {
             vwQRCode?.frame = CGRect.zero

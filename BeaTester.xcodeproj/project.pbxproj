@@ -155,13 +155,13 @@
 				CCF965B21FA7758D00685247 /* QRGenerator.swift */,
 				CCF965B61FA7758E00685247 /* QRReader.swift */,
 				CCF965B11FA7758D00685247 /* QRTakeViewController.swift */,
-				CCF965C11FA7759E00685247 /* QRTakeViewController.xib */,
 				CCF965C21FA7759E00685247 /* QRViewController.swift */,
-				CCF965C01FA7759E00685247 /* QRViewController.xib */,
 				CCF965BF1FA7759E00685247 /* SosialUtility.swift */,
 				CCF965C31FA7759F00685247 /* TestViewController.swift */,
 				CCF965C51FA7759F00685247 /* UIDoneTextField.swift */,
 				CCF965C41FA7759F00685247 /* UserDefaultsUtil.swift */,
+				CCF965C11FA7759E00685247 /* QRTakeViewController.xib */,
+				CCF965C01FA7759E00685247 /* QRViewController.xib */,
 				CCF965D31FA7762A00685247 /* Main.storyboard */,
 				CCF965801FA774AA00685247 /* LaunchScreen.storyboard */,
 				CCF965D51FA776A500685247 /* Info.plist */,
@@ -513,12 +513,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.01.00;
+				CURRENT_PROJECT_VERSION = 1.10.02;
 				DEVELOPMENT_TEAM = S42QQG2S96;
 				INFOPLIST_FILE = BeaTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.10;
 				NEW_SETTING = "";
 				"NEW_SETTING[arch=*]" = "SWIFT_WHOLE_MODULE_OPTIMIZATION = YES";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.iBeaconTest;
@@ -535,12 +535,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.01.00;
+				CURRENT_PROJECT_VERSION = 1.10.02;
 				DEVELOPMENT_TEAM = S42QQG2S96;
 				INFOPLIST_FILE = BeaTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.10;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.chabotech.iBeaconTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

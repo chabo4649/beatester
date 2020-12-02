@@ -8,7 +8,8 @@
 
 import UIKit
 
-class PeripheralViewController: UIViewController, UITextFieldDelegate {
+class PeripheralViewController: UIViewController, UITextFieldDelegate,QRTakeViewControllerDelegate {
+
     
     @IBOutlet weak var UUIDTextField: UITextField!
     @IBOutlet weak var MajorTextField: UITextField!
@@ -18,6 +19,8 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ToolBar: UIToolbar!
     var Beacon: CBeaconTransfer?
     var Status: Bool = false
+    
+    var QTVC: QRTakeViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +96,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
     @IBAction func playPauseAction(_ sender: UIBarButtonItem) {
         var items = self.ToolBar.items!
         var toggleButton:UIBarButtonItem
+        let toggleButtonIndex = 7
         if !self.Status  {
             if !(MajorTextField!.text! == "" || MinorTextField!.text! == "" || UUIDTextField!.text! == ""){
                 if(Int(MajorTextField!.text!)! > COMMON.MAX_CODE || MajorTextField!.text! == ""){
@@ -109,7 +113,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
                     self.Status = true
                     self.makeAlert("Signal Start")
                     self.Status = true
-                    items[5] = toggleButton
+                    items[toggleButtonIndex] = toggleButton
                     self.ToolBar.setItems(items, animated: false)
                 }
             }else{
@@ -126,7 +130,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
             self.makeAlert("Signal Stoped")
             self.Status = false
             toggleButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(self.playPauseAction(_:)))
-            items[5] = toggleButton
+            items[toggleButtonIndex] = toggleButton
             self.ToolBar.setItems(items, animated: false)
         }
         
@@ -187,6 +191,13 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func pushQrTakeButton(_ sender: UIBarButtonItem) {
+        QTVC = QRTakeViewController()
+        QTVC?.delegate = self
+        self.present(QTVC!, animated: true, completion: nil)
+    }
+    
+    
     func textFieldDidEndEditing(_ textField:UITextField){
         print(textField.text!)
         switch textField.tag{
@@ -215,6 +226,23 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(otherAction)
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    func readedQRCode(pQRCode: String) {
+        print(pQRCode)
+        //indexes 0:UUID, 1:MajorID, 2:MinorID
+        let qrinfo = pQRCode.components(separatedBy: ",")
+        
+        //★qrinfoを復号化
+        
+        //QRCodeを表示するメソッドを実装する！！！
+        UUIDTextField.text = qrinfo[0]
+        MajorTextField.text = qrinfo[1]
+        MinorTextField.text = qrinfo[2]
+        //tmpName = qrinfo[3]
+        //tmpGroupName = qrinfo[4]
+        
+        //self.MainTableView?.reloadData()
     }
 
 
