@@ -152,7 +152,7 @@ class PeripheralViewController: UIViewController, UITextFieldDelegate,QRTakeView
             action in
             let QRVC = QRViewController()
             QRVC.QRString =
-                "\(self.UUIDTextField.text!),\(self.MajorTextField.text!),\(self.MinorTextField.text!)"
+                "\(self.UUIDTextField.text!),\(self.MajorTextField.text!),\(self.MinorTextField.text!),スマホ,"
             self.present(QRVC, animated: true, completion: nil)
         }
         

@@ -14,7 +14,7 @@ class QRGenerator: NSObject {
     static func stringToQRCode(pString: String) -> UIImage{
             
         // NSString から NSDataへ変換
-        let data = pString.data(using: String.Encoding.utf8)!
+        let data = pString.data(using: String.Encoding.shiftJIS)!
         
         // QRコード生成のフィルター
         // NSData型でデーターを用意
