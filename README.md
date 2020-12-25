@@ -2,8 +2,8 @@
 iOS端末をiBeacon(BLE)発信器、受信器にすることができるiOSアプリ
  
 # DEMO
- 
-準備中。。。
+![peripheral](https://user-images.githubusercontent.com/8757630/103123478-d4597200-46c7-11eb-8e01-40cb9229f2da.PNG)
+![central](https://user-images.githubusercontent.com/8757630/103123487-d8858f80-46c7-11eb-8576-3e887e0f29e3.PNG)
  
 # Features
  
