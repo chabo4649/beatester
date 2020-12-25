@@ -7,7 +7,7 @@ iOS端末をiBeacon(BLE)発信器、受信器にすることができるiOSア�
  
 # Features
  
-"hoge"のセールスポイントや差別化などを説明する
+iPhoneをiBeacon発信端末として使うことができる。
  
 # Requirement
  
